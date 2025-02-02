@@ -15,7 +15,7 @@ jobs:
 
       - name: Setup
         run: |
-          brew install meson pkg-config
+          brew install meson pkg-config pkgconf
           mkdir -p /tmp/build/{include/{EGL,KHR},lib/pkgconfig}
           cp libdrm.pc /tmp/build/lib/pkgconfig/
           cd /tmp/build/include
